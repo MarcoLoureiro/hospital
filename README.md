@@ -27,7 +27,6 @@ Implementação de um hospital utilizando conceitos base de POO
 - ``Todos os atributos private - OK``
 - ``Criar um construtor por classe - OK``
 - ``Métodos Get - Set - OK``
-- ``Extra: Um Equals criado por você. - OK``
 - ``Selecionar no mínimo 10 classes - OK``
 - ``Crie os seguintes métodos nas classes - OK``
 - ``Paciente -> List sintomas() - OK`` 
