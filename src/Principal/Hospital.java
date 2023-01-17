@@ -1,13 +1,13 @@
 package Principal;
 
-public abstract class Hospital {
+public class Hospital {
     private String nomeHospital;
     private Boolean isTrabalhando;
 
 
 
     public Hospital(){
-
+        this.nomeHospital = "Unimed";
     }
 
     public Hospital(String nomeHospital){
@@ -40,7 +40,6 @@ public abstract class Hospital {
         isTrabalhando = trabalhando;
     }
 
-    public abstract void definirPoloHospital(String nomeHospitalEmQueTrabalha);
 
 
 }

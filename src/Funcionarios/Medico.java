@@ -1,6 +1,7 @@
 package Funcionarios;
 
 import Principal.Funcionario;
+import Principal.Hospital;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +12,8 @@ public abstract class Medico extends Funcionario {
     private String especialidade;
 
 
-    public Medico(String nomeHospital, Boolean isTrabalhando,String nome,Integer idade){
-        super(nomeHospital,isTrabalhando,nome,idade);
+    public Medico(String nome, Integer idade,String nomeHospital){
+        super(nome,idade,nomeHospital);
     }
 
     public Boolean getIsPlantonista() {

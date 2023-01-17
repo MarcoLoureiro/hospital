@@ -1,18 +1,12 @@
 package Principal;
 
-public abstract class Pessoa extends Hospital{
+public abstract class Pessoa {
 
     private String nome;
     private Integer idade;
 
 
     public Pessoa(String nome, Integer idade){
-        this.nome = nome;
-        this.idade = idade;
-    }
-
-    public Pessoa(String nomeHospital, Boolean isTrabalhando,String nome, Integer idade){
-        super(nomeHospital,isTrabalhando);
         this.nome = nome;
         this.idade = idade;
     }

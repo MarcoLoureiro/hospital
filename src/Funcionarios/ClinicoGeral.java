@@ -1,13 +1,15 @@
 package Funcionarios;
 
+import Principal.Hospital;
+
 import java.util.List;
 
 public final class ClinicoGeral extends Medico{
 
     private Boolean isSolicitandoExames;
 
-    public ClinicoGeral(String nomeHospital, Boolean isTrabalhando,String nome,Integer idade){
-        super(nomeHospital,isTrabalhando,nome,idade);
+    public ClinicoGeral(String nome, Integer idade,String nomeHospital){
+        super(nome,idade,nomeHospital);
     }
 
     public Boolean getSolicitandoExames() {

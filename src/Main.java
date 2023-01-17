@@ -1,4 +1,5 @@
 import Funcionarios.*;
+import Principal.Hospital;
 import Principal.Paciente;
 import Salas.Atendimento;
 import Salas.Cirurgia;
@@ -10,10 +11,11 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        ClinicoGeral clinicoGeral = new ClinicoGeral("Porto",false,"Carlos",32);
-        Cirurgiao cirurgiao = new Cirurgiao("Unimed",true,"Marco",28);
-        Neuro neuro = new Neuro("Amazônia",true,"Fernando",25);
-        Funcionario atendente = new Atendente("Unimed",true,"José",29);
+
+        ClinicoGeral clinicoGeral = new ClinicoGeral("Carlos",32,"Porto");
+        Cirurgiao cirurgiao = new Cirurgiao("Marco",28,"Unimed");
+        Neuro neuro = new Neuro("Fernando",25,"Amazônia");
+        Funcionario atendente = new Atendente("José",29,"Unimed");
         Cirurgia salaCirugia = new Cirurgia("Porto Dias");
         Atendimento salaAtendimento = new Atendimento("Unimed");
         Paciente paciente = new Paciente("João",19);
@@ -44,7 +46,7 @@ public class Main {
         neuro.realizarDiagnostico(paciente.getSintomas());
 
 
-        //Hospital -> Pessoa -> Funcionario -> Funcionarios -> Medico (ClínicoGeral, Cirugiao, Neuro) && Atendente
+        //Hospital -> Pessoa -> Funcionario -> Medico (ClínicoGeral, Cirugiao, Neuro) && Atendente
         //Hospital -> Sala -> Cirurgia && Atendimento
 
     }

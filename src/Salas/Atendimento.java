@@ -17,11 +17,6 @@ public final class Atendimento extends Sala{
     }
 
     @Override
-    public void definirPoloHospital(String nomeHospitalEmQueTrabalha) {
-        setNomeHospital(nomeHospitalEmQueTrabalha);
-    }
-
-    @Override
     public void reservar(int dia, int mes, int ano) {
         setAno(ano);
         setMes(mes);

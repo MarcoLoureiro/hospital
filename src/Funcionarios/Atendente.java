@@ -6,8 +6,8 @@ public class Atendente extends Funcionario {
 
     private Boolean isAtendendo;
 
-    public Atendente(String nomeHospital, Boolean isTrabalhando,String nome,Integer idade){
-        super(nomeHospital,isTrabalhando,nome,idade);
+    public Atendente(String nome,Integer idade,String nomeHospital){
+        super(nome,idade,nomeHospital);
         this.isAtendendo = false;
     }
 

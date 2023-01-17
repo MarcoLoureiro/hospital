@@ -1,12 +1,14 @@
 package Funcionarios;
 
+import Principal.Hospital;
+
 import java.util.List;
 
 public final class Cirurgiao extends Medico{
     private Integer numeroDeCirugias;
 
-    public Cirurgiao(String nomeHospital, Boolean isTrabalhando,String nome,Integer idade){
-        super(nomeHospital,isTrabalhando,nome,idade);
+    public Cirurgiao(String nome, Integer idade,String nomeHospital){
+        super(nome,idade,nomeHospital);
     }
 
     public Integer getNumeroDeCirugias() {

@@ -3,16 +3,13 @@ import Principal.*;
 
 public abstract class Funcionario extends Pessoa {
     private String cargo;
+    private Hospital hospital;
 
-    public Funcionario(String nomeHospital, Boolean isTrabalhando,String nome, Integer idade){
-        super(nomeHospital,isTrabalhando,nome,idade);
+    public Funcionario(String nome, Integer idade,String nomeHospital){
+        super(nome,idade);
+        this.hospital = new Hospital();
+        hospital.setNomeHospital(nomeHospital);
     }
-
-    @Override
-    public void definirPoloHospital(String nomeHospitalEmQueTrabalha) {
-        System.out.printf("%s trabalha no polo %s do hospital\n",getNome(), getNomeHospital());
-    }
-
 
     public String getCargo() {
         return cargo;

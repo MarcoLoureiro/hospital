@@ -6,8 +6,8 @@ import java.util.List;
 public final class Neuro extends Medico{
     private List<String> procedimentosNeurologicos = new ArrayList<>();
 
-    public Neuro(String nomeHospital, Boolean isTrabalhando,String nome,Integer idade){
-        super(nomeHospital,isTrabalhando,nome,idade);
+    public Neuro(String nome,Integer idade,String nomeHospital){
+        super(nome,idade,nomeHospital);
     }
 
     public List<String> getProcedimentosNeurologicos() {

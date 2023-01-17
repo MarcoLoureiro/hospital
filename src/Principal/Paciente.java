@@ -19,11 +19,6 @@ public class Paciente extends Pessoa{
         this.sintomas = sintomas;
     }
 
-    @Override
-    public void definirPoloHospital(String nomeHospitalEmQueTrabalha) {
-        System.out.println("Paciente "+ getNome() +" vai ao hospital "+nomeHospitalEmQueTrabalha);
-    }
-
     public final void descreverSintomas(List<String> sintomas){
         setSintomas(sintomas);
         System.out.println("Paciente apresenta "+getSintomas());

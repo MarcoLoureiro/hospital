@@ -15,10 +15,6 @@ public final class Cirurgia extends Sala{
         return isEsterilizada;
     }
 
-    @Override
-    public void definirPoloHospital(String nomeHospitalEmQueTrabalha) {
-        setNomeHospital(nomeHospitalEmQueTrabalha);
-    }
 
     public void setEsterilizada(Boolean esterilizada) {
         isEsterilizada = esterilizada;
